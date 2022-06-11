@@ -1,0 +1,42 @@
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.section-progress {
+  $duration_width: 70px;
+  $volumn_width: 70px;
+
+  .duration {
+    width: 100%;
+    max-width: $duration_width;
+    display: inline-block;
+    text-align: left;
+    //background: blue;
+    vertical-align: middle;
+  }
+  .progress {
+    width: 100%;
+    max-width: calc(100% - 140px);
+    //background: red;
+  }
+  .duration_total {
+    width: 100%;
+    max-width: $duration_width;
+    display: inline-block;
+    text-align: right;
+    //background: green;
+    vertical-align: middle;
+  }
+}
+
+.section-controls > .mat-icon-button {
+  background: aquamarine;
+}
+
+.music-list {
+  mat-selection-list {
+    max-height: calc(100vh - 300px);
+    overflow-y: auto;
+  }
+}

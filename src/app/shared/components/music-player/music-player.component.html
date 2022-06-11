@@ -1,0 +1,55 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Shiba Inu</mat-card-title>
+    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+  </mat-card-header>
+<!--  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">-->
+  <mat-card-content>
+
+    <section class="section-progress">
+      <label class="duration">00:00:00</label>
+      <mat-slider class="progress"></mat-slider>
+      <label class="duration_total">00:00:00</label>
+    </section>
+
+    <section class="section-controls">
+      <button
+        mat-icon-button aria-label="Example icon-button with a heart icon"
+      >
+        <mat-icon>skip_previous</mat-icon>
+      </button>
+      <button mat-icon-button aria-label="Example icon-button with a heart icon">
+        <mat-icon>stop</mat-icon>
+      </button>
+      <button mat-icon-button aria-label="Example icon-button with a heart icon">
+        <mat-icon>play_arrow</mat-icon>
+      </button>
+      <button mat-icon-button aria-label="Example icon-button with a heart icon">
+        <mat-icon>skip_next</mat-icon>
+      </button>
+      <button class="volumn_pick" mat-icon-button aria-label="Example icon-button with a heart icon">
+        <mat-icon>volume_down_alt</mat-icon>
+      </button>
+    </section>
+
+    <section class="music-list">
+      <mat-selection-list #shoes [multiple]="false">
+        <mat-list-option *ngFor="let track of tracks" [value]="track">
+          {{track.name}}
+        </mat-list-option>
+      </mat-selection-list>
+    </section>
+
+<!--    <p>-->
+<!--      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.-->
+<!--      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally-->
+<!--      bred for hunting.-->
+<!--    </p>-->
+
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
